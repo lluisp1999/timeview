@@ -3,9 +3,14 @@
 This is the re-implementation of "Towards Transparent Time Series Forecasting" with my personal methods.
 
 ## Clone the Repository
-Clone the repository using:
+Clone the original repository using:
 ```bash
 git clone https://github.com/krzysztof-kacprzyk/TIMEVIEW.git
+```
+
+Clone this repository using:
+```bash
+git clone https://github.com/lluisp1999/timeview.git
 ```
 
 ## Installation
@@ -18,7 +23,7 @@ This will also install `timeview` (the main module) in editable mode.
 ## ThirdDegree Model
 To run experiments with the ThirdDegree model, use the following command:
 ```bash
-python benchmark.py --datasets airfoil_log flchain_1000 stress-strain-lot-max-0.2 synthetic_tumor_wilkerson_1 --baselines ThirdDegree --n_trials 10 --n_tune 100 --seed 0 --device gpu
+python benchmark.py --datasets beta_900_20 --baselines ThirdDegree --n_trials 10 --n_tune 100 --seed 0 --device gpu
 ```
 
 ## GNN-based Encoder
